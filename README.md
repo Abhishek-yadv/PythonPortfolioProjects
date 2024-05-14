@@ -1,4 +1,3 @@
-```markdown
 # Exploratory Data Analysis: Managing Risk in Lending
 
 ## Introduction
@@ -40,4 +39,3 @@ The data utilized in this analysis has been sourced from Kaggle.
 
 - The file `application_data.csv` contains comprehensive client information at the time of application, particularly focusing on discerning if a client encounters payment difficulties.
 - Additionally, the dataset `previous_application.csv` provides insights into the client's historical loan data, detailing whether past applications were approved, cancelled, refused, or resulted in an unused offer.
-```
