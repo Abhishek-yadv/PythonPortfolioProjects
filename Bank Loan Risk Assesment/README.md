@@ -37,6 +37,6 @@ In other words, the company wants to understand the driving factors (or driver v
 
 The data utilized in this analysis has been sourced from Kaggle.
 
-- The file `application_data.csv` contains comprehensive client information at the time of application, particularly focusing on discerning if a client encounters payment difficulties.
+- The file [`application_data.csv`](https://www.kaggle.com/datasets/ravichan76/application-data) contains comprehensive client information at the time of application, particularly focusing on discerning if a client encounters payment difficulties.
 - Additionally, the dataset `previous_application.csv` provides insights into the client's historical loan data, detailing whether past applications were approved, cancelled, refused, or resulted in an unused offer.
 
