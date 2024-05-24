@@ -44,5 +44,6 @@ streamlit run main.py
 
 ```
 
-Make sure to follow the instructions provided by Meta for downloading and setting up the Llama3 model correctly within your project.
+Make sure to follow the instructions provided by Meta for downloading and setting up the Llama3 model
+correctly within your project.
 ```
