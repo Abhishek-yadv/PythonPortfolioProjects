@@ -1,4 +1,3 @@
-
 ## 🐍 Python Portfolio Projects
 
 Welcome to my collection of awesome Python projects! In this repository, you'll find some projects
@@ -14,7 +13,6 @@ which can be used for risk assessment and portfolio management.
 
 2. WebScraperAIAgent: This Streamlit app allows you to scrape websites using an AI agent.
 You can provide a URL and specify what information you want the AI agent to extract from the website.
-
 
 ## Getting Started
 To get started with any of these projects, follow these steps:
