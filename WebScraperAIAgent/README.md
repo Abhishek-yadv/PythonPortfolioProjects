@@ -38,5 +38,5 @@ streamlit run main.py
 - The scraped results are displayed in the app for you to view.
 
 
-Make sure to follow the instructions provided by Meta for downloading and setting up the Llama3 model
+Make sure to follow the instructions provided by Ollama for downloading and setting up the Llama3 model
 correctly within your project.
