@@ -20,7 +20,9 @@ You can provide a URL and specify what information you want the AI agent to extr
 To get started with any of these projects, follow these steps:
 1. Clone the repository to your local machine using the following command:
 
+```
 git clone https://github.com/Abhishek-yadv/PythonPortfolioProjects.git
+```
 
 2. Navigate to the project directory you're interested in.
 3. Install the required dependencies by running `pip install -r requirements.txt` (if a `requirements.txt` file is present).
