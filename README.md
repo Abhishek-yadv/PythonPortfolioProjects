@@ -2,8 +2,8 @@
 ## 🐍 Python Portfolio Projects
 
 Welcome to my collection of awesome Python projects! In this repository, you'll find some projects
-showcasing my Python programming skills. These projects' methods can also be helpful in different
-domains and serve various purposes, ranging from data analysis and web scraping to automation.
+showcasing my Python programming skills. Techniques that are used in these projects can also cover other domains 
+from data analysis and web scraping to automation and various purposes.
 
 ## Project List
 
