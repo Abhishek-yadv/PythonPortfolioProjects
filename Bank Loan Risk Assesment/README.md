@@ -6,10 +6,10 @@ and serve various purposes, ranging from data analysis and web scraping to autom
 ```
 ## Project List
 ```
-1. **Exploratory Data Analysis: Managing Risk in Lending**: This project involves performing
+1.Bank Loan Risk Assesment: Managing Risk in Lending, This project involves performing
 Exploratory Data Analysis (EDA) on a banking dataset to identify patterns and driving factors
 behind loan defaults. The goal is to understand the variables that are strong indicators of default,
- which can be used for risk assessment and portfolio management.
+which can be used for risk assessment and portfolio management.
 
 2. **WebScraperAIAgent**: This Streamlit app allows you to scrape websites using an AI agent. You can provide a URL and specify what information you want the AI agent to extract from the website.
 ```
