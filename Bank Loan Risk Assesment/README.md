@@ -27,5 +27,6 @@ git clone https://github.com/Abhishek-yadv/PythonPortfolioProjects.git
 3. Install the required dependencies by running `pip install -r requirements.txt` (if a `requirements.txt` file is present).
 4. Follow the project-specific instructions provided in the respective project's README file or documentation.
 
-## Thanks For Reading
+
 ```
+## Thanks For Reading
