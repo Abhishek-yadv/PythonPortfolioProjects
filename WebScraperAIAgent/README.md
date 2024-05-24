@@ -1,7 +1,8 @@
 # 💻 Web Scrapping AI Agent
 ```markdown
-This Streamlit app allows you to scrape a website using the Llama3 language model from Meta and the scrapegraphai library.
- Simply provide the URL of the website you want to scrape and specify what you want the AI agent to extract from the website.
+This Streamlit app allows you to scrape a website using the Llama3 language model
+from Meta and the scrapegraphai library. Simply provide the URL of the website
+you want to scrape and specify what you want the AI agent to extract from the website.
 
 ## Features
 
@@ -13,7 +14,6 @@ This Streamlit app allows you to scrape a website using the Llama3 language mode
 
 1. Clone the GitHub repository
 
-```
 git clone [https://github.com/Abhishek-yadv/PythonPortfolioProjects/tree/main/WebScraperAIAgent]
 ```
 
