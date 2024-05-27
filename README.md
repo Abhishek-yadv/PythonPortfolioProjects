@@ -1,8 +1,7 @@
 ## 🐍 Python Portfolio Projects
 
 Welcome to my collection of PythonPortfolioProjects! In this repository, you'll find some projects
-showcasing my Python programming skills. Techniques that are used in these projects can also cover other domains 
-from data analysis and web scraping to automation and various purposes.
+showcasing my Python programming skills. Techniques used in these projects can also cover other domains from data analysis, to web scraping, and various purposes.
 
 ## Project List
 
@@ -11,7 +10,7 @@ Exploratory Data Analysis (EDA) on a banking dataset to identify patterns and dr
 behind loan defaults. The goal is to understand the variables that are strong indicators of default,
 which can be used for risk assessment and portfolio management.
 
-2. WebScraperAIAgent: This Streamlit app allows you to scrape websites using an AI agent.
+2. WebScraperAIAgent: This Streamlit app allows you to scrape any websites using an AI agent.
 You can provide a URL and specify what information you want the AI agent to extract from the website.
 
 ## Getting Started
