@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 ## 4. Run the Streamlit App
 ```
-streamlit run main.py
+python main.py
 ```
 
 ## How it Works?
