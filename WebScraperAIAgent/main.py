@@ -1,38 +1,78 @@
-# Import the required libraries
 import streamlit as st
 from scrapegraphai.graphs import SmartScraperGraph
+from scrapegraphai.utils import prettify_exec_info
 
-# Set up the Streamlit app
-st.title("Web Scrapping AI Agent 🕵️‍♂️")
-st.caption("This app allows you to scrape a website using OpenAI API")
-
-# Set up the configuration for the SmartScraperGraph
+# Define the configuration for the scraper
 graph_config = {
     "llm": {
-        "model": "ollama/llama3",
-        "temperature": 0,
-        "format": "json",  # Ollama needs the format to be specified explicitly
-        "base_url": "http://localhost:11434",  # set Ollama URL
+        "model": "ollama/phi3:mini",  # Replace with a valid model name
+        "temperature": 1,
+        "format": "json",
+        "model_tokens": 2000,
+        "base_url": "http://localhost:11434",
     },
     "embeddings": {
         "model": "ollama/nomic-embed-text",
-        "base_url": "http://localhost:11434",  # set Ollama URL
-    },
-    "verbose": True,
+        "temperature": 0,
+        "base_url": "http://localhost:11434",
+    }
 }
-# Get the URL of the website to scrape
-url = st.text_input("Enter the URL of the website you want to scrape")
-# Get the user prompt
-user_prompt = st.text_input(
-    "What you want the AI agent to scrae from the website?")
 
-# Create a SmartScraperGraph object
-smart_scraper_graph = SmartScraperGraph(
-    prompt=user_prompt,
-    source=url,
-    config=graph_config
+# Streamlit app interface
+st.set_page_config(
+    page_title="Smart Web Scraper",
+    page_icon=":mag:",
+    layout="centered",
+    initial_sidebar_state="auto",
 )
-# Scrape the website
-if st.button("Scrape"):
-    result = smart_scraper_graph.run()
-    st.write(result)
+
+st.title("🔍 Smart Web Scraper")
+
+st.markdown("""
+    Welcome to the **Smart Web Scraper**! 🎉  
+    This application allows you to scrape information from any website using a powerful AI-driven scraper.
+""")
+
+# User input for website URL
+url = st.text_input("🌐 Enter the website URL to scrape:", "https://en.wikipedia.org/wiki/The_Best_FIFA_Men%27s_Player")
+
+# User input for prompt
+prompt = st.text_input("💡 Enter the prompt for scraping:", "List me all Wins by country name.")
+
+# Scrape button with emoji
+if st.button("🚀 Scrape"):
+    if url and prompt:
+        st.info("Scraping in progress... Please wait ⏳")
+        # Create the SmartScraperGraph instance
+        smart_scraper_graph = SmartScraperGraph(
+            prompt=prompt,
+            source=url,
+            config=graph_config
+        )
+
+        # Run the scraper and display results
+        try:
+            result = smart_scraper_graph.run()
+            st.success("Scraping completed successfully! ✅")
+            st.json(result)  # Display the result as JSON
+        except Exception as e:
+            st.error(f"An error occurred: {e} ❌")
+    else:
+        st.warning("Please enter both a valid URL and a prompt. ⚠️")
+
+# Instructions for the user
+st.markdown("""
+    **Instructions:**  
+    1. Enter the website URL you want to scrape. 🌐
+    2. Provide a prompt to guide the scraping process. 💡
+    3. Click the "Scrape" button to start. 🚀
+    
+    This application scrapes the given website URL based on the provided prompt.
+    Make sure the URL points to a valid webpage for proper scraping results.
+""")
+
+# Footer
+st.markdown("""
+    ---
+    Made with ❤️ by [Your Name]
+""")
