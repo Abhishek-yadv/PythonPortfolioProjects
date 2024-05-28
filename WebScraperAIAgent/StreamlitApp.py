@@ -5,7 +5,7 @@ from scrapegraphai.utils import prettify_exec_info
 # Define the configuration for the scraper
 graph_config = {
     "llm": {
-        "model": "ollama/phi3:mini",  # Replace with a valid model name
+        "model": "ollama/phi3:mini",
         "temperature": 1,
         "format": "json",
         "model_tokens": 2000,
@@ -30,7 +30,7 @@ st.title("🔍 Smart Web Scraper")
 
 st.markdown("""
     Welcome to the **Smart Web Scraper**! 🎉  
-    This application allows you to scrape information from any website using a powerful AI-driven scraper.
+    This application uses a powerful AI-driven scraper to scrape information from any website.
 """)
 
 # User input for website URL
@@ -42,7 +42,7 @@ prompt = st.text_input("💡 Enter the prompt for scraping:", "List me all Wins 
 # Scrape button with emoji
 if st.button("🚀 Scrape"):
     if url and prompt:
-        st.info("Scraping in progress... Please wait ⏳")
+        st.info("Scraping in progress... please wait ⏳")
         # Create the SmartScraperGraph instance
         smart_scraper_graph = SmartScraperGraph(
             prompt=prompt,
@@ -50,7 +50,7 @@ if st.button("🚀 Scrape"):
             config=graph_config
         )
 
-        # Run the scraper and display results
+        # Run the scraper and display the results
         try:
             result = smart_scraper_graph.run()
             st.success("Scraping completed successfully! ✅")
@@ -74,5 +74,5 @@ st.markdown("""
 # Footer
 st.markdown("""
     ---
-    Made with ❤️ by [Your Name]
+    Made with ❤️ by Abhishek
 """)
