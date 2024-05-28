@@ -1,3 +1,5 @@
 streamlit 
 scrapegraphai
 playwright
+ollama
+nomic-embed-text
